@@ -1,0 +1,6 @@
+#!/bin/bash
+
+
+rigctld -m 3085 -s 19200 -r /dev/serial/by-id/usb-Icom_Inc._IC-705_IC-705_32001717-if00  -t4534 &
+sleep 5
+rigctld -m2 -r127.0.0.1:4534 -t14534
